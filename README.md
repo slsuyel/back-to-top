@@ -9,51 +9,31 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Installation
-
-**BEFORE YOU INSTALL:** please read the [prerequisites](#prerequisites)
-
-Start with cloning this repo on your local machine:
-
-```sh
-$ git clone https://github.com/ORG/PROJECT.git
-$ cd PROJECT
-```
-
 To install and set up the library, run:
 
-```sh
-$ npm install -S myLib
+## Installation
+
+You can install the package via npm:
+
+```bash
+npm install back-to-top-component
 ```
 
-Or if you prefer using Yarn:
+```jsx
+import React from "react";
+import { BackToTop } from "back-to-top-component";
 
-```sh
-$ yarn add --dev myLib
+function App() {
+  return (
+    <div>
+      <h1>Welcome to My App</h1>
+      {/* Other content */}
+      <BackToTop />
+    </div>
+  );
+}
+
+export default App;
 ```
 
-## Usage
-
-### Serving the app
-
-```sh
-$ npm start
-```
-
-### Building a distribution version
-
-```sh
-$ npm run build
-```
-
-This task will create a distribution version of the project
-inside your local `dist/` folder
-
-### Serving the distribution version
-
-This will use `lite-server` for servign your already
-generated distribution version of the project.
-
-_Note_ this requires
-[Building a distribution version](#building-a-distribution-version) first.
-# back-to-top
+This README provides a basic overview of the application, including installation instructions, usage examples, and information about the features and license. You can further customize it with additional details as needed.
