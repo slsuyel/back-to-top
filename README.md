@@ -45,4 +45,12 @@ function App() {
 export default App;
 ```
 
+## Authors
+
+- **Suyel Haque** - [Facebook](https://www.facebook.com/slsuyel2) - [GitHUb](https://github.com/slsuyel) - [Linkedin](https://www.linkedin.com/in/slsuyel)
+
+## GitHub
+
+- **GitHub** - [Facebook](https://github.com/slsuyel/back-to-top)
+
 This README provides a basic overview of the application, including installation instructions, usage examples, and information about the features and license. You can further customize it with additional details as needed.
