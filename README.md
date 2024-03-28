@@ -1,7 +1,7 @@
 [![npm version](https://badge.fury.io/js/angular2-expandable-list.svg)](https://badge.fury.io/js/angular2-expandable-list)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-# back-to-top-component
+# go-to-top-react
 
 > A lightweight and customizable React component that adds a "Back to Top" button to your web application.
 
@@ -16,18 +16,18 @@ To install and set up the library, run:
 You can install the package via npm:
 
 ```bash
-npm install back-to-top-component
+npm install go-to-top-react
 ```
 
 Or you can install the package via yarn:
 
 ```bash
-yarn add back-to-top-component
+yarn add go-to-top-react
 ```
 
 ```jsx
 import React from "react";
-import { BackToTop } from "back-to-top-component";
+import { BackToTop } from "go-to-top-react";
 
 function App() {
   return (
@@ -47,7 +47,7 @@ export default App;
 
 ## Authors
 
-- **Suyel Haque** - [Facebook](https://www.facebook.com/slsuyel2) - [GitHUb](https://github.com/slsuyel) - [Linkedin](https://www.linkedin.com/in/slsuyel)
+- **Suyel Haque** - [Facebook](https://www.facebook.com/slsuyel2) - [GitHub](https://github.com/slsuyel) - [Linkedin](https://www.linkedin.com/in/slsuyel)
 
 ## GitHub
 

@@ -1,13 +1,17 @@
 {
-  "name": "back-to-top-component",
-  "version": "1.0.1",
-  "description": "",
+  "name": "go-to-top-react",
+  "version": "1.0.2",
+  "description": "A lightweight and customizable React component that adds a 'Go to Top' button to your web application.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react go to",
+    "back to top dynamically",
+    "back to top"
+  ],
+  "author": "Suyel Haque",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
