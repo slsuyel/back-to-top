@@ -51,6 +51,6 @@ export default App;
 
 ## GitHub
 
-- **GitHub** - [](https://github.com/slsuyel/back-to-top)
+- [GitHub](https://github.com/slsuyel/back-to-top)
 
 This README provides a basic overview of the application, including installation instructions, usage examples, and information about the features and license. You can further customize it with additional details as needed.
