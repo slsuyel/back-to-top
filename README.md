@@ -3,7 +3,7 @@
 
 # go-to-top-react
 
-> A lightweight and customizable React component that adds a "Back to Top" button to your web application.
+> A lightweight and customizable React component that adds a "Go to Top" button to your web application.
 
 ## Getting Started
 
