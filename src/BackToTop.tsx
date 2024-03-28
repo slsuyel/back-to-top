@@ -1,7 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-const BackToTop = () => {
+interface BackToTopProps {
+  className?: string;
+}
+const BackToTop = ({ className }: BackToTopProps) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [dashOffset, setDashOffset] = useState(0);
 
@@ -65,12 +68,12 @@ const BackToTop = () => {
 
   return (
     <div
-      className="progress-wrap active-progress"
+      className={`back-to-top ${className}`}
       style={visibilityStyle}
       onClick={handleBackToTop}
     >
       <svg
-        className="progress-circle svg-content"
+        className=""
         width="100%"
         height="100%"
         viewBox="-1 -1 102 102"

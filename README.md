@@ -19,6 +19,12 @@ You can install the package via npm:
 npm install back-to-top-component
 ```
 
+Or you can install the package via yarn:
+
+```bash
+yarn add back-to-top-component
+```
+
 ```jsx
 import React from "react";
 import { BackToTop } from "back-to-top-component";
@@ -29,6 +35,9 @@ function App() {
       <h1>Welcome to My App</h1>
       {/* Other content */}
       <BackToTop />
+
+      {/* Add any custom css class */}
+      {/* <BackToTop className='your-custom-class'/>*/}
     </div>
   );
 }
