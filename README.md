@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 To install and set up the library, run:
 
-## Demo
+- [Demo](https://i.ibb.co/7nK00Vy/ezgif-4-4c2eb5555b.gif)
 
 <img src=https://i.ibb.co/7nK00Vy/ezgif-4-4c2eb5555b.gif alt=devto style="margin-bottom: 5px;" />
 
