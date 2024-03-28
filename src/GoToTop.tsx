@@ -1,10 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-interface BackToTopProps {
+interface GoToTopProps {
   className?: string;
 }
-const BackToTop = ({ className }: BackToTopProps) => {
+const GoToTop = ({ className }: GoToTopProps) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [dashOffset, setDashOffset] = useState(0);
 
@@ -68,7 +68,7 @@ const BackToTop = ({ className }: BackToTopProps) => {
 
   return (
     <div
-      className={`back-to-top ${className}`}
+      className={`back-to-top ${className ? className : ""}`}
       style={visibilityStyle}
       onClick={handleBackToTop}
     >
@@ -103,4 +103,4 @@ const BackToTop = ({ className }: BackToTopProps) => {
   );
 };
 
-export default BackToTop;
+export default GoToTop;

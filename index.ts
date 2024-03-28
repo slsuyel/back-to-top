@@ -1,5 +1,3 @@
-// Import your React component(s)
-import BackToTop from "./src/BackToTop";
+import GoToTop from "./src/GoToTop";
 
-// Export your components
-export { BackToTop };
+export { GoToTop };

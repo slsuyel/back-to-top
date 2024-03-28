@@ -31,17 +31,17 @@ yarn add go-to-top-react
 
 ```jsx
 import React from "react";
-import { BackToTop } from "go-to-top-react";
+import { GoToTop } from "go-to-top-react";
 
 function App() {
   return (
     <div>
       <h1>Welcome to My App</h1>
       {/* Other content */}
-      <BackToTop />
+      <GoToTop />
 
       {/* Add any custom css class */}
-      {/* <BackToTop className='your-custom-class'/>*/}
+      {/* <GoToTop className='your-custom-class'/>*/}
     </div>
   );
 }

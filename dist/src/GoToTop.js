@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
 const react_2 = require("react");
-const BackToTop = ({ className }) => {
+const GoToTop = ({ className }) => {
     const [scrollProgress, setScrollProgress] = (0, react_2.useState)(0);
     const [dashOffset, setDashOffset] = (0, react_2.useState)(0);
     (0, react_2.useEffect)(() => {
@@ -58,11 +58,11 @@ const BackToTop = ({ className }) => {
         left: "50%",
         transform: "translate(-50%, -50%) rotate(180deg)",
     };
-    return (react_1.default.createElement("div", { className: `back-to-top ${className}`, style: visibilityStyle, onClick: handleBackToTop },
+    return (react_1.default.createElement("div", { className: `back-to-top ${className ? className : ""}`, style: visibilityStyle, onClick: handleBackToTop },
         react_1.default.createElement("svg", { className: "", width: "100%", height: "100%", viewBox: "-1 -1 102 102", fill: "none" },
             react_1.default.createElement("path", { d: "M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98", style: circleStyle })),
         react_1.default.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "30", height: "30", viewBox: "0 0 24 24", fill: "none", stroke: "#2b4eff", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", style: iconStyle },
             react_1.default.createElement("line", { x1: "12", y1: "5", x2: "12", y2: "19" }),
             react_1.default.createElement("polyline", { points: "19 12 12 19 5 12" }))));
 };
-exports.default = BackToTop;
+exports.default = GoToTop;
