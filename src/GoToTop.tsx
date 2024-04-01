@@ -1,11 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import "./styles/GoToTop.css";
 
 interface GoToTopProps {
   className?: string;
 }
-
 const GoToTop = ({ className }: GoToTopProps) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [dashOffset, setDashOffset] = useState(0);
@@ -19,6 +17,7 @@ const GoToTop = ({ className }: GoToTopProps) => {
       const progress = (scrollTop / (fullHeight - windowHeight)) * 100;
       setScrollProgress(progress);
 
+      // Calculate the dash offset dynamically
       const newDashOffset = 305 * (1 - progress / 100);
       setDashOffset(newDashOffset);
     };
@@ -34,11 +33,44 @@ const GoToTop = ({ className }: GoToTopProps) => {
     });
   };
 
-  const visibilityClass = scrollProgress > 20 ? "visible" : "";
+  const visibilityStyle: React.CSSProperties = {
+    opacity: scrollProgress > 20 ? 1 : 0,
+    pointerEvents: scrollProgress > 20 ? "auto" : "none",
+    position: "fixed",
+    right: "30px",
+    bottom: "90px",
+    height: "46px",
+    width: "46px",
+    cursor: "pointer",
+    borderRadius: "50px",
+    boxShadow: "rgb(151 139 139 / 99%) 0px 0px 0px ",
+    zIndex: 99,
+    transition: "all 200ms linear",
+    background: "#ffffff80",
+    transform: scrollProgress > 20 ? "translateY(0)" : "translateY(15px)",
+    visibility: scrollProgress > 20 ? "visible" : "hidden",
+  };
+
+  const circleStyle: React.CSSProperties = {
+    stroke: "#2b4eff",
+    strokeWidth: 4,
+    boxSizing: "border-box",
+    transition: "all 200ms linear",
+    strokeDasharray: "299.875",
+    strokeDashoffset: dashOffset,
+  };
+
+  const iconStyle: React.CSSProperties = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%) rotate(180deg)",
+  };
 
   return (
     <div
-      className={`back-to-top ${visibilityClass} ${className ? className : ""}`}
+      className={`${className ? className : ""}`}
+      style={visibilityStyle}
       onClick={handleBackToTop}
     >
       <svg
@@ -50,8 +82,7 @@ const GoToTop = ({ className }: GoToTopProps) => {
       >
         <path
           d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-          className="circle"
-          style={{ strokeDashoffset: dashOffset }}
+          style={circleStyle}
         ></path>
       </svg>
       <svg
@@ -64,7 +95,7 @@ const GoToTop = ({ className }: GoToTopProps) => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="icon"
+        style={iconStyle}
       >
         <line x1="12" y1="5" x2="12" y2="19"></line>
         <polyline points="19 12 12 19 5 12"></polyline>

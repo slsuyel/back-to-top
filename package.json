@@ -1,15 +1,20 @@
 {
   "name": "go-to-top-react",
-  "version": "1.0.8",
+  "version": "0.0.1",
   "description": "A lightweight and customizable React component that adds a 'Go to Top' button to your web application.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react go to",
-    "back to top dynamically",
-    "back to top"
+    "React",
+    "Go To Top",
+    "Back To Top",
+    "Scroll Progress",
+    "Scrolling Indicator",
+    "Dynamic Back To Top",
+    "scroll up",
+    "scroll-to-top"
   ],
   "author": "Suyel Haque",
   "license": "ISC",
