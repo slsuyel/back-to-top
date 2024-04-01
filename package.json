@@ -1,6 +1,6 @@
 {
   "name": "go-to-top-react",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A lightweight and customizable React component that adds a 'Go to Top' button to your web application.",
   "main": "dist/index.js",
   "scripts": {
