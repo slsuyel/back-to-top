@@ -30,8 +30,8 @@ yarn add go-to-top-react
 ```
 
 ```jsx
-import React from "react";
-import { GoToTop } from "go-to-top-react";
+import React from 'react';
+import { GoToTop } from 'go-to-top-react';
 
 function App() {
   return (
@@ -48,6 +48,30 @@ function App() {
 
 export default App;
 ```
+
+## Props Table
+
+| Prop                 | Type   | Default Value                          | Description                                                   |
+| -------------------- | ------ | -------------------------------------- | ------------------------------------------------------------- |
+| `className`          | string | `""`                                   | Additional CSS class for the button container.                |
+| `stroke`             | string | `"#2b4eff"`                            | Color of the circular progress stroke.                        |
+| `bgColor`            | string | `"#ffffff80"`                          | Background color of the button.                               |
+| `size`               | number | `46`                                   | Size (width and height) of the button in pixels.              |
+| `iconSize`           | number | `30`                                   | Size of the icon inside the button in pixels.                 |
+| `shadow`             | string | `"rgb(151 139 139 / 99%) 0px 0px 0px"` | Box shadow of the button.                                     |
+| `transitionDuration` | string | `"200ms"`                              | Duration of the transition effects (e.g., fade-in, movement). |
+| `strokeWidth`        | number | `4`                                    | Width of the circular progress stroke.                        |
+| `iconStrokeWidth`    | number | `2`                                    | Width of the icon stroke.                                     |
+| `iconStrokeColor`    | string | `"#2b4eff"`                            | Color of the icon stroke.                                     |
+
+---
+
+## Peer Dependencies
+
+This package requires the following peer dependencies:
+
+- **`react`**: `^18.0.0`
+- **`react-dom`**: `^18.0.0`
 
 ## Authors
 

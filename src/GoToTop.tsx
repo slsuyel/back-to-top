@@ -1,10 +1,32 @@
+"use client"
 import React from "react";
 import { useEffect, useState } from "react";
 
 interface GoToTopProps {
   className?: string;
+  stroke?: string;
+  bgColor?: string;
+  size?: number;
+  iconSize?: number;
+  shadow?: string;
+  transitionDuration?: string;
+  strokeWidth?: number;
+  iconStrokeWidth?: number;
+  iconStrokeColor?: string;
 }
-const GoToTop = ({ className }: GoToTopProps) => {
+
+const GoToTop = ({
+  className = "",
+  stroke = "#2b4eff",
+  bgColor = "#ffffff80",
+  size = 46,
+  iconSize = 30,
+  shadow = "rgb(151 139 139 / 99%) 0px 0px 0px",
+  transitionDuration = "200ms",
+  strokeWidth = 4,
+  iconStrokeWidth = 2,
+  iconStrokeColor = "#2b4eff",
+}: GoToTopProps) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [dashOffset, setDashOffset] = useState(0);
 
@@ -39,23 +61,23 @@ const GoToTop = ({ className }: GoToTopProps) => {
     position: "fixed",
     right: "30px",
     bottom: "90px",
-    height: "46px",
-    width: "46px",
+    height: `${size}px`,
+    width: `${size}px`,
     cursor: "pointer",
     borderRadius: "50px",
-    boxShadow: "rgb(151 139 139 / 99%) 0px 0px 0px ",
+    boxShadow: shadow,
     zIndex: 99,
-    transition: "all 200ms linear",
-    background: "#ffffff80",
+    transition: `all ${transitionDuration} linear`,
+    background: bgColor,
     transform: scrollProgress > 20 ? "translateY(0)" : "translateY(15px)",
     visibility: scrollProgress > 20 ? "visible" : "hidden",
   };
 
   const circleStyle: React.CSSProperties = {
-    stroke: "#2b4eff",
-    strokeWidth: 4,
+    stroke: stroke,
+    strokeWidth: strokeWidth,
     boxSizing: "border-box",
-    transition: "all 200ms linear",
+    transition: `all ${transitionDuration} linear`,
     strokeDasharray: "299.875",
     strokeDashoffset: dashOffset,
   };
@@ -69,7 +91,7 @@ const GoToTop = ({ className }: GoToTopProps) => {
 
   return (
     <div
-      className={`${className ? className : ""}`}
+      className={`${className}`}
       style={visibilityStyle}
       onClick={handleBackToTop}
     >
@@ -87,12 +109,12 @@ const GoToTop = ({ className }: GoToTopProps) => {
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
+        width={iconSize}
+        height={iconSize}
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#2b4eff"
-        strokeWidth="2"
+        stroke={iconStrokeColor}
+        strokeWidth={iconStrokeWidth}
         strokeLinecap="round"
         strokeLinejoin="round"
         style={iconStyle}

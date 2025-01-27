@@ -1,6 +1,6 @@
 {
   "name": "go-to-top-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A lightweight and customizable React component that adds a 'Go to Top' button to your web application.",
   "main": "dist/index.js",
   "scripts": {
@@ -19,8 +19,8 @@
   "author": "Suyel Haque",
   "license": "ISC",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.73"
@@ -28,6 +28,6 @@
   "homepage": "https://github.com/slsuyel/back-to-top",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slsuyel/back-to-top"
+    "url": "git+https://github.com/slsuyel/back-to-top.git"
   }
 }
